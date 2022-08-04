@@ -29,45 +29,99 @@ public class ExercicioUm {
         }
 
         switch (menu) {
-            // 1) Crie um programa que calcule a média (`(nota1 + nota2 + nota3 / 3)`)
             case 1:
-                // media(double notaUm, double notaDois, double notaTres)
+                double notaUm=10.0;
+                double notaDois=9.0;
+                double notaTres=8.5;
+                double media=(notaUm+notaDois+notaTres/3);
+
+                System.out.println(notaUm);
+                System.out.println(notaDois);
+                System.out.println(notaTres);
+                System.out.println(media);
                 break;
-            // 2) Crie um programa que calcule a área (`lado1 * lado2`)
+            
             case 2:
-                // area(double ladoUm, double ladoDois)
+                double baseB= 16;
+                double alturaH= 4.5;
+                double area=(baseB*alturaH);
+
+                System.out.println(baseB);
+                System.out.println(alturaH);
+                System.out.println(area);
                 break;
-            // 3) Crie um programa que calcule o volume (`largura * altura * profundidade`)
+            
             case 3:
-                // volume(double largura, double altura, double profundidade)
+                double largura= 3;
+                double altura= 2;
+                double profundidade= 5;
+                double volume= (altura*profundidade*largura);
+
+                System.out.println(altura);
+                System.out.println(profundidade);
+                System.out.println(largura);
+                System.out.println(volume);
                 break;
             // 4) Crie um programa que avalie se um valor é maior do que o dobro de outro valor
             case 4:
-                // valorMaiorQueDobro(double base, double verificar)
+                double valorBase= 25;
+                double valorMaiorQueDobro= 40;
+
+                System.out.println(valorBase);
+                System.out.println(valorMaiorQueDobro);
+
+                if(valorMaiorQueDobro>(valorBase*2)){
+                    System.out.println("O valor secundário é maior que o dobro do primeiro valor");
+                }
+                else{
+                    System.out.println("O valor não é maior que o dobro do primeiro valor");
+                }
                 break;
             // 5) Crie um programa que calcule _bhaskara_
             case 5:
                 // bhaskara(int a, int b, int c);
                 break;
-            // 6) Crie um programa que calcule a velocidade média de uma viagem (`distancia (km) / tempo (h)`)
             case 6:
-                // mediaViagem(double distancia, double tempo)
+                double distancia= 433;
+                double tempo= 10.50;
+                double mediaViagem= (distancia/tempo);
+                System.out.println(distancia);
+                System.out.println(tempo);
+                System.out.println(mediaViagem);
                 break;
-            // 7) Crie um programa que calcule o percentual de imposto pago (`faturamento \ qtd imposto`)
             case 7:
-                // percentualImposto(double faturamento, double qtdImposto)
+                double faturamento= 1000.99; 
+                double qtdImposto= 10;
+                double percentualImposto= ((faturamento*qtdImposto)/100);
+                System.out.println(faturamento);
+                System.out.println(qtdImposto);
+                System.out.println(percentualImposto);
                 break;
-            // 8) Crie um programa que teste se um valor é par ou ímpar
             case 8:
-                // parOuImpar(int valor)
+                int parOuImpar= 121;
+
+                if((parOuImpar%2)==0){
+                    System.out.println("Este valor é par");
+                }else{
+                    System.out.println("Este valor é impar");
+                }
                 break;
             // 9) Crie um programa que compare dois valores Strings
             case 9:
-                // compareString(String stringUm, String stringDois)
+                // compareString(
+                    String stringUm= "C";
+                    String stringDois= "C++"; 
+                    System.out.println("A linguagem " +stringUm +" é igual a linguagem " +stringDois +" ?:");
+                    System.out.println("Resposta: "+stringUm.equals(stringDois));
+                    System.out.println();
                 break;
             // 10) Crie um programa que tenha uma variável com ponto em String e converta seu valor para inteiro
             case 10:
-                // convertString(String valor);
+                Double Val= 99.10;
+                int convertString= Integer.parseInt(Val);
+                System.out.println(Val);
+                System.out.println(convertString);
+
                 break;
             // 11) Crie um programa que receba o salário e diga o valor de imposto de renda conforme abaixo:
             // Base                     | Alíquota
